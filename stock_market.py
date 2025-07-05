@@ -88,6 +88,8 @@ def stock_market():
             "endpoint_url": BaseHook.get_connection('minio').host,
         }
     )
+
+    print("This is fopr testing Purpose. Code 1o1")
     
     is_api_available() >> get_stock_prices >> store_prices >> format_prices >> get_formatted_csv >> load_to_dw
         
